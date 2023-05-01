@@ -1,0 +1,336 @@
+html {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+ }
+ 
+ body {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   min-height: 100vh;
+   background-color: rgb(122, 190, 215);
+   font-family: system, -apple-system, BlinkMacSystemFont, sans-serif;
+   font-size: 20px;
+   color: #5d6494;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+ 
+ /* Individual circular containers, 3 of them*/
+ .container {
+   width: 440px;
+   height: 220px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+ }
+
+  /* All 3 containers togerther*/
+ .boxes-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 2680px; /* Change this value to set the desired distance between the boxes */
+  margin: 0 auto;
+}
+ 
+ .box {
+   position: absolute;
+   width: 440px;
+   height: 740px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   border-radius: 25px;
+   overflow: hidden;
+   -webkit-transition: -webkit-box-shadow ease 1s;
+   transition: -webkit-box-shadow ease 1s;
+   transition: box-shadow ease 1s;
+   transition: box-shadow ease 1s, -webkit-box-shadow ease 1s;
+ }
+ 
+ .box-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+
+ .icon {
+   position: relative;
+   margin-top: 8px;
+   -webkit-transition: all 0.6s ease;
+   transition: all 0.6s ease;
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+   will-change: transform;
+ }
+ 
+ /* This makes the border of the circle boxes before hove */
+ .icon_bg {
+   width: 200px;
+   height: 200px;
+   border-radius: 100%;
+   border: 1px solid rgb(122, 190, 215);
+   -webkit-box-shadow: 0 10px 15px 0 rgba(44, 71, 146, 0.25);
+           box-shadow: 0 10px 15px 0 rgba(44, 71, 146, 0.25);
+   background-color: #fff;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-transition: all 0.6s ease;
+   transition: all 0.6s ease;
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+   will-change: transform;
+ }
+ 
+ .title {
+   position: relative;
+ }
+ 
+ .super-box:hover .box {
+ /*   border: 1px solid rgba(225, 227, 232, 0.18); */
+   -webkit-box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+           box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+ }
+ 
+ .super-box:hover .icon_bg {
+   -webkit-transform: translateY(-32px) scale(6);
+           transform: translateY(-32px) scale(6);
+ }
+ 
+ .super-box:hover .icon {
+   -webkit-transform: translateY(-48px) scale(1.4);
+           transform: translateY(-48px) scale(1.4);
+ }
+ 
+ .super-box {
+     width: 220px;
+   height: 220px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+    margin-right: 110px;
+    margin-left: 110px;
+ }
+ 
+ .text {
+   position: relative;
+   top: -32px;
+   width: 200px;
+   text-align: center;
+   -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+ }
+ 
+ .super-box:hover .text {
+   display: none; 
+   -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+ }
+ 
+ .box::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  top: 111px;
+  opacity: 0;
+  font-size: 15px;
+  font-weight: bolder;
+  color: #ffffff; /* Set initial color to white */
+  line-height: 20px;
+  transition: opacity 1s, color 2s; /* Add transition for the color property */
+}
+
+ .box-1:hover::after {
+  content: "Top quality distilled beverages";
+  opacity: 1;
+  color: #5d6494;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -700%);
+}
+
+.box-2:hover::after {
+  content: "Top quality Malt Based beverages";
+  opacity: 1;
+  color: #5d6494;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -700%);
+}
+
+.box-3:hover::after {
+  content: "Top quality non-alcoholic beverages";
+  opacity: 1;
+  color: #5d6494;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -500%);
+}
+ 
+.super-box:hover .box::after {
+   opacity: 1;
+   -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+   -webkit-transition-delay: 0.32s;
+           transition-delay: 0.32s;
+}
+
+.dr {
+position: absolute;
+  bottom: 16px; 
+  right: 16px;
+  width:100px;
+}
+ 
+
+
+/* ... rest of the CSS code ... */
+
+.icon_bg {
+  position: relative;
+}
+
+.default-image {
+  display: block;
+  width: 42px;
+  height: 26px;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.hover-image {
+  display: block;
+  width: 20px;
+  height: 52px;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -125%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transition-delay: 0.32s;
+          transition-delay: 0.32s;
+}
+
+.hover-image,
+.hover-text {
+  display: none;
+}
+
+.container:hover .default-image {
+  display: none;
+}
+
+.container:hover .hover-image,
+.container:hover .hover-text {
+  display: block;
+}
+
+.hover-text {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.non-hover-image {
+  width: 75px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.box:hover .non-hover-image {
+  display: none; /* Hide the image when the box is hovered */
+}
+
+.box-button {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(93, 100, 148, 0.5); /* Make the button translucent */
+  color: white;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 1s ease, background-color 0.5s ease;
+  transition-delay: 0.2s;
+}
+
+.box:hover .box-button {
+  opacity: 1;
+  background-color: #5d6494;
+}
+
+.box:not(:hover) .box-button {
+  transition: opacity 0.2s ease; /* Make the button disappear immediately */
+  transition-delay: 0s;
+}
