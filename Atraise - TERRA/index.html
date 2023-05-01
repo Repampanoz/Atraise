@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TERRA</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+<!-- Scroll from right to left AOS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation BAR
+    ==========================================-->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container-nav"> 
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header favicon-name-pos">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand page-scroll" href="index.html">
+            <div class="logo-container">
+              <img src="img/favicon.png" alt="HELIOS Logo" class="favicon favicon-size">
+              <span>TERRA</span>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="logistics.html" class="page-scroll">Projects</a></li>
+            <li class="dropdown">
+              <a href="disrtibution.html" class="page-scroll dropdown-toggle" data-toggle="dropdown">Contact Us <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="item1.html">Send Inquiry</a></li>
+                <li><a href="item2.html">Customer Support</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse --> 
+      </div>
+      <!-- /.container-fluid --> 
+    </nav>
+<!-- END of Navigation BAR
+    ==========================================-->    
+
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="overlay">
+      <div class="container-header">
+        <div class="row">
+          <div class="intro-text">
+            <h1>TERRA</h1>
+            <h2>Building the future</h2>
+  
+            <a href="#about" class="btn btn-custom btn-lg scroll-below-about" style="margin-top: 100px;">Get Started</a>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+              $(document).ready(function() {
+                $('.scroll-below-about').on('click', function(e) {
+                  e.preventDefault();
+            
+                  // Find the target element
+                  var target = $($(this).attr('href'));
+            
+                  // Calculate the scroll position
+                  var scrollPosition = target.offset().top + 50; // Adjust the value "100" to control the additional scroll
+            
+                  // Animate the scroll
+                  $('html, body').animate({ scrollTop: scrollPosition }, 800);
+                });
+              });
+            </script>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>TERRA by Atraise</h2>
+      <hr>
+
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-6"> <img src="img/about.jpg" class="img-responsive thumbnail zoom-effect" alt=""> </div>
+      <div class="about-text">
+          <div class="custom-list">
+            <ul>
+              <li>Experience seamless construction, where innovation meets efficiency.</li>
+              <li>Creating sustainable, cost-effective properties for a brighter tomorrow.</li>
+              <li>Duis sed dapibus leo</li>
+              <li>Sed commodo nibh ante</li>
+            </ul>
+            
+            <a href="#services" class="btn btn-custom btn-lg scroll-below-about">Our Services</a>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script>
+            $(document).ready(function() {
+              $('.scroll-below-about').on('click', function(e) {
+                e.preventDefault();
+          
+                // Find the target element
+                var target = $($(this).attr('href'));
+          
+                // Calculate the scroll position
+                var scrollPosition = target.offset().top + 50; // Adjust the value "100" to control the additional scroll
+          
+                // Animate the scroll
+                $('html, body').animate({ scrollTop: scrollPosition }, 800);
+              });
+            });
+          </script>
+          </div>
+          
+
+
+
+        <div class="intro-text">
+          <h1></h1>
+          <p></p>
+          
+      </div>
+    </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const observerOptions = {
+            root: null,
+            rootMargin: "20px",
+            threshold: 0.9, // adjust this value to control when the effect is triggered
+          };
+        
+          const callback = (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("zoom-in");
+              } else {
+                entry.target.classList.remove("zoom-in");
+              }
+            });
+          };
+        
+          const observer = new IntersectionObserver(callback, observerOptions);
+          const img = document.querySelector(".zoom-effect");
+        
+          observer.observe(img);
+        });
+      </script>       
+        
+    </div>
+  </div>
+</div>
+
+
+<!-- Services Section -->
+<div id="services" class="text-center">
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1 section-title">
+      <h2>Our Services</h2>
+      <hr>
+      <p>We offer a variery of services reggarding to real state.</p>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-md-4" data-aos="fade-left" data-aos-duration="1000"> <i class="fa fa-home"></i>
+        <h4>Site Planning & Land Acquisition</h4>
+        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+      </div>
+      <div class="col-xs-6 col-md-4" data-aos="fade-left" data-aos-duration="1500"> <i class="fa fa-book"></i>
+        <h4>Permitting & Budgeting</h4>
+        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.</p>
+      </div>
+      <div class="col-xs-6 col-md-4" data-aos="fade-left" data-aos-duration="2000"> <i class="fa fa-gears"></i>
+        <h4>Construction & Materials Control</h4>
+        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
+      </div>
+      <div class="col-xs-6 col-md-4" data-aos="fade-left" data-aos-duration="2500"> <i class="fa fa-group"></i>
+        <h4>Property Management</h4>
+        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
+      </div>
+      <div class="col-xs-6 col-md-4" data-aos="fade-left" data-aos-duration="3000"> <i class="fa fa-hotel"></i>
+        <h4>Tenant Acquisition</h4>
+        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
+      </div>
+      <div class="col-xs-6 col-md-4" data-aos="fade-left" data-aos-duration="3500"> <i class="fa fa-money"></i>
+        <h4>Selling & Renting</h4>
+        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Tech and Innov -->
+<div class="introtech">
+  <div class="overlay">
+    <div class="container">
+      <div class="row">
+        <div class="box-containertech">
+          <div class="box-slider">
+            <div class="box-wrapper">
+            <!-- Add class "active" to the first box -->
+            <div class="boxtech active">
+                <div class="box-title-image-container">
+                    <h2 class="box-titletech">Autoclaved Aerated Concrete (AAC)</h2>
+                    <img class="box-imagetech" src="img/concretebricks.png" alt="Image 1">
+                </div>
+                <div class="box-text-container">
+                    <p class="box-texttech">70-year history in residential, commercial, and industrial construction.</p>
+                    <p class="box-texttech">Eco-friendly Material and Processing.</p>
+                    <p class="box-texttech">Eco-friendly Material and Processing.</p>
+                </div>
+            </div>
+
+            <div class="boxtech">
+                <div class="box-title-image-container">
+                    <h2 class="box-titletech">Cold-Formed Steel (CFS)</h2>
+                    <img class="box-imagetech" src="img/steel.png" alt="Image 1">
+                </div>
+                <div class="box-text-container">
+                    <p class="box-texttech">CFS and its application in mid-rise and low-rise steel framing solutions for various end uses</p>
+                    <p class="box-texttech">Description of the comprehensive services provided, including engineering, material supply, wall and floor panelization, fabrication, and framing installation.</p>
+                    <p class="box-texttech">Advantages: Resistance to damage and pests, reduced project risks, lower insurance costs, ease of handling, reduced construction time, and environmental sustainability.</p>
+                </div>
+            </div>
+
+            <div class="boxtech">
+                <div class="box-title-image-container">
+                    <h2 class="box-titletech">Replacing the 3-Coat Stucco System</h2>
+                    <img class="box-imagetech" src="img/stucc.png" alt="Image 1">
+                </div>
+                <div class="box-text-container">
+                    <p class="box-texttech">Emphasize the cost, time and quality effectiveness of the proposed solutions compared to the traditional 3-coat stucco system</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <a href="#about" class="btn btn-custom btn-lg scroll-below-about">Get Started</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Projects showcase -->
+<div id="pricing" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Social Proof</h2>
+      <hr>
+      <p>Here we'll have a preview of the projects done by this company to add credibility.</p>
+    </div>
+    <div class="clip-container">
+    <div class="row">
+      <div class="carousel-container">
+      <!-- Project A content -->
+      <div class="col-md-4 col-sm-4 box">
+        <div class="pricing-table">
+          <div class="plan-name">
+            <h3>Project A</h3>
+          </div>
+          <div class="plan-price">
+            <div class="price-value">picture 1</div>
+          </div>
+          <div class="plan-list">
+            <ul>
+              <li><strong>1 GB</strong> Disk Space</li>
+              <li><strong>1GB</strong> Monthly Bandwidth</li>
+              <li><strong>3</strong> Domains</li>
+              <li><strong>3</strong> Email Accounts</li>
+              <li><strong>Free</strong> Setup</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project B content -->
+      <div class="col-md-4 col-sm-4 box">
+        <div class="pricing-table highlight-plan">
+          <div class="plan-name">
+            <h3>Project B</h3>
+          </div>
+          <div class="plan-price">
+            <div class="price-value">picture 2</div>
+          </div>
+          <div class="plan-list">
+            <ul>
+              <li><strong>10 GB</strong> Disk Space</li>
+              <li><strong>10GB</strong> Monthly Bandwidth</li>
+              <li><strong>10</strong> Domains</li>
+              <li><strong>10</strong> Email Accounts</li>
+              <li><strong>Free</strong> Setup</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project C content -->
+      <div class="col-md-4 col-sm-4 box">
+        <div class="pricing-table">
+          <div class="plan-name">
+            <h3>Project C</h3>
+          </div>
+          <div class="plan-price">
+            <div class="price-value">picture 3</div>
+          </div>
+          <div class="plan-list">
+            <ul>
+              <li><strong>20 GB</strong> Disk Space</li>
+              <li><strong>20GB</strong> Monthly Bandwidth</li>
+              <li><strong>20</strong> Domains</li>
+              <li><strong>20</strong> Email Accounts</li>
+              <li><strong>Free</strong> Setup</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+            <!-- Project D content -->
+      <div class="col-md-4 col-sm-4 box">
+        <div class="pricing-table">
+          <div class="plan-name">
+            <h3>Project D</h3>
+          </div>
+          <div class="plan-price">
+            <div class="price-value">$30</div>
+          </div>
+          <div class="plan-list">
+            <ul>
+              <li><strong>20 GB</strong> Disk Space</li>
+              <li><strong>20GB</strong> Monthly Bandwidth</li>
+              <li><strong>20</strong> Domains</li>
+              <li><strong>20</strong> Email Accounts</li>
+              <li><strong>Free</strong> Setup</li>
+            </ul>
+          </div>
+          <div class="plan-signup"> <a href="#" class="btn-system">Order Now</a> </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      function rotateBoxes() {
+        var firstBox = $(".carousel-container .box:first-child");
+        var clone = firstBox.clone();
+        firstBox.animate({marginLeft: '-33.3333%'}, 1000, function() {
+          $(this).remove();
+          $(".carousel-container").append(clone.css('marginLeft', '0'));
+        });
+      }
+    
+      setInterval(rotateBoxes, 4000);
+    });
+    </script>
+    
+    
+
+  </div>
+</div>
+
+<div id="footer">
+  <div class="container text-center">
+    <div class="fnav">
+      <p>Copyright &copy; 2016 Catalyst. Designed by <a href="https://www.phoenixarena.io/" rel="nofollow">Repampanoz</a></p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+<script>AOS.init();</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function () {
+  var boxes = $(".boxtech");
+  var currentIndex = 0;
+  var boxChangeInterval = 3000; // 3 seconds
+
+  function switchBox() {
+    boxes.eq(currentIndex).removeClass("active").addClass("left");
+    boxes.eq((currentIndex + 1) % boxes.length).removeClass("right").addClass("active");
+    boxes.eq((currentIndex + 2) % boxes.length).removeClass("left").addClass("right");
+
+    currentIndex = (currentIndex + 1) % boxes.length;
+  }
+
+  // Initialize the first box
+  boxes.eq(currentIndex).addClass("active");
+  boxes.eq((currentIndex + 1) % boxes.length).addClass("right");
+  boxes.eq((currentIndex + 2) % boxes.length).addClass("left");
+
+  // Switch box every 3 seconds
+  setInterval(switchBox, boxChangeInterval);
+});
+</script>
+
+</body>
+</html>
